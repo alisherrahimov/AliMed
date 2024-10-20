@@ -1,10 +1,7 @@
-export {default as Text} from './Text';
-export {default as Touchable} from './Touchable';
-export {default as View} from './View';
-export {default as Input} from './Input';
-export {default as Modal} from './Modal';
-export {default as Image} from './Image';
-export {default as BlurView} from './BlurView';
-export {default as ChatHeader} from './ChatHeader';
-export {default as RenderMessage} from './RenderMessage';
-export {default as TouchableWithOutKeyBoard} from './TouchableWithOutKeyBoard';
+import MyButton from './MyButton/MyButton';
+import MyModal from './MyModal/MyModal';
+import MyText from './MyText/MyText';
+import MyView from './MyView/MyView';
+import MyCorusel from './MyCorusel/MyCorusel';
+
+export {MyText, MyButton, MyView, MyModal, MyCorusel};

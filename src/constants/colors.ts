@@ -1,8 +1,13 @@
-enum COLORS {
-  '#000000' = '#000000',
-  '#ffffff' = '#ffffff',
-  '#199A8E' = '#199A8E',
-  '#25af7c' = '#25af7c',
-}
+import {Colors} from '../hooks/ThemeProvider';
 
-export default COLORS;
+const lightTheme: Colors = {
+  backgroundColor: '#fff',
+  textColor: '#000',
+};
+
+const darkTheme: Colors = {
+  backgroundColor: '#000',
+  textColor: '#fff',
+};
+
+export {darkTheme, lightTheme};

@@ -11,3 +11,7 @@ export {default as OnBoarding1} from './onboard';
 export {default as OnBoarding2} from './onboard2';
 export {default as OnBoarding3} from './onboard3';
 export {default as SearchIcon} from './search';
+export {default as CategoryIcon} from './category';
+export {default as PharmIcon} from './pharm';
+export {default as DoctorsIcon} from './doctors';
+export {default as StarIcon} from './star';

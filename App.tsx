@@ -1,8 +1,10 @@
 import React from 'react';
-import {StackNavigation} from '@routes';
-import './src/theme/unistyle';
+import {Button, View} from 'react-native';
+import useTheme from './src/hooks/useTheme';
+import Introduction from './src/screens/Auth/Introduction/Introduction';
+
 const App = () => {
-  return <StackNavigation />;
+  return <Introduction />;
 };
 
 export default App;
