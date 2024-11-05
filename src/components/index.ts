@@ -3,5 +3,5 @@ import MyModal from './MyModal/MyModal';
 import MyText from './MyText/MyText';
 import MyView from './MyView/MyView';
 import MyCorusel from './MyCorusel/MyCorusel';
-
-export {MyText, MyButton, MyView, MyModal, MyCorusel};
+import MyStyledButton from './MyStyledButtun/MyStyledButton';
+export {MyText, MyButton, MyStyledButton, MyView, MyModal, MyCorusel};

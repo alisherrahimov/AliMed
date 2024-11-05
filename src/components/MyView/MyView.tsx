@@ -3,7 +3,7 @@ import React, {PropsWithChildren} from 'react';
 import useTheme from '../../hooks/useTheme';
 
 interface MyViewProps extends PropsWithChildren {
-  style?: ViewStyle;
+  style?: ViewStyle | ViewStyle[];
   margin?: number;
   padding?: number;
   paddingVertical?: number;

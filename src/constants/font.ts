@@ -15,11 +15,3 @@ export const FONTSIZE = {
   x14: 38,
   x15: 40,
 };
-
-export const FONTS = {
-  Bold: 'Quicksand-Bold',
-  Regular: 'Quicksand-Regular',
-  Medium: 'Quicksand-Medium',
-  SemiBold: 'Quicksand-SemiBold',
-  Thin: 'Quicksand-Thin',
-};

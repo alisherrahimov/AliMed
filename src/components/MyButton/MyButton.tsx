@@ -1,9 +1,9 @@
-import {TouchableOpacity, ViewStyle} from 'react-native';
+import {StyleProp, TouchableOpacity, ViewStyle} from 'react-native';
 import React, {PropsWithChildren} from 'react';
 
 interface MyButtonProps extends PropsWithChildren {
-  onPress: () => void;
-  style?: ViewStyle | ViewStyle[];
+  onPress?: () => void;
+  style?: StyleProp<ViewStyle>;
 }
 
 const MyButton: React.FunctionComponent<MyButtonProps> = ({
@@ -12,7 +12,7 @@ const MyButton: React.FunctionComponent<MyButtonProps> = ({
   style,
 }) => {
   return (
-    <TouchableOpacity activeOpacity={0.8} style={[style]} onPress={onPress}>
+    <TouchableOpacity activeOpacity={0.8} style={style} onPress={onPress}>
       {children}
     </TouchableOpacity>
   );

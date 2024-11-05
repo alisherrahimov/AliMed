@@ -1,16 +1,12 @@
 import {Text as NativeText, TextProps, TextStyle} from 'react-native';
 import React, {PropsWithChildren} from 'react';
 import useTheme from '../../hooks/useTheme';
+import FONTS from '@fonts';
 
 interface CustomTextProps extends PropsWithChildren {
   color?: string;
   size?: number;
-  font?:
-    | 'Quicksand-Bold'
-    | 'Quicksand-Medium'
-    | 'Quicksand-Regular'
-    | 'Quicksand-SemiBold'
-    | 'Quicksand-Thin';
+  font?: FONTS;
   margin?: number;
   padding?: number;
   onPress?: () => void;

@@ -1,15 +1,11 @@
 import React, {PropsWithChildren} from 'react';
 import mmkv from '../cache/mmkv';
-import {darkTheme, lightTheme} from '../constants/colors';
-export interface Colors {
-  backgroundColor: string;
-  textColor: string;
-}
+import {ColorsI, darkTheme, lightTheme} from '../constants/colors';
 
 interface ThemeProviderProps extends PropsWithChildren {
   theme: 'light' | 'dark';
   onChangeTheme: (value: 'light' | 'dark') => void;
-  colors: Colors;
+  colors: ColorsI;
 }
 
 export const ThemeContext = React.createContext<ThemeProviderProps>({

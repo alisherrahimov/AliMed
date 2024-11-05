@@ -1,9 +1,10 @@
-import {ViewStyle} from 'react-native';
+import {StyleProp, ViewStyle} from 'react-native';
 import React, {PropsWithChildren} from 'react';
 import MyButton from '../MyButton/MyButton';
+import {styles} from './MyStyledButton.style';
 interface MyStyledButtonProps extends PropsWithChildren {
-  onPress: () => void;
-  style: ViewStyle | ViewStyle[];
+  onPress?: () => void | undefined;
+  style?: StyleProp<ViewStyle>;
 }
 
 const MyStyledButton: React.FunctionComponent<MyStyledButtonProps> = ({
@@ -12,7 +13,7 @@ const MyStyledButton: React.FunctionComponent<MyStyledButtonProps> = ({
   children,
 }) => {
   return (
-    <MyButton onPress={onPress} style={Array.isArray(style) ? style : [style]}>
+    <MyButton onPress={onPress} style={[styles.container, style]}>
       {children}
     </MyButton>
   );
